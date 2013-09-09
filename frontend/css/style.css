@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@font-face { font-family:Myraid Pro; src:url(../fonts/MYRIADPRO-REGULAR.OTF); }
+
+@font-face { font-family:Myraid Pro BlackCond; src:url(../fonts/MYRIADPRO-BLACKCOND.OTF); }
+
+@font-face { font-family:Myraid Pro Light; src:url(../fonts/MYRIADPRO-LIGHT.otf); }
+
+html, body { padding: 0; margin: 0; }
+
+a { outline:none; }
+
+a img { border:none;}
+
+#wraper { width:100%; padding: 0; margin:0; }
+
+.header_content { position:fixed; margin-top:300px;}
+
+.header_content p { line-height:20px; }
+
+.header_content p a { font-family:Myraid Pro; color:#626c60; font-size:20px; line-height:20px; }
+
+.header_content p a:hover { font-size:32px; }
+
+header { width:100%; margin: 0; padding: 0; height:100%; height:903px; min-height:100%; background:url(../images/activities_bg_01.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+#header {  }
+
+.logo a img { margin-top:5px; }
+
+#nav { }
+
+#nav ul { list-style:none; }
+
+#nav ul li { padding: 0; margin: 0px 0 0 0; float:left; display:inline; }
+
+.navbar ul li a { color:#000000; font-size:14px; font-family:Myraid Pro; }
+
+.navbar ul li a:hover { color:#be1d2c; text-decoration:underline; }
+
+.nav_right { padding: 0; margin: 5px 10px 0 0; float:right; width:10%; display:block; }
+
+.social_media { float:right; padding: 0; }
+
+.social_media a img { padding: 0; margin: 0 0 0px 0px; }
+
+.language { padding: 0; margin: 0px 0px 0 0; float:right; position:relative; }
+
+.language span { padding: 0; margin: 0; line-height:10px; }
+
+.language span a { padding: 0; margin: 0; color:#000000; font-size:7px; font-family:Myraid Pro; text-decoration:none; }
+
+.language span a:hover { color:#be1d2c; text-decoration:underline; }
+
+#activites { margin-top:28%; }
+
+#activites h1 { text-align:center; font-family:Myraid Pro BlackCond; font-size:60px; color:#be1d2c; padding: 0; margin: 0; }
+
+#activites a { display:block; width:100%; }
+
+#activites a img { display:block; margin-left:auto; margin-right:auto; width:77px; }
+
+.activity_text { float:left; width:33%; margin-top:280px; }
+
+.right_bird { float:left; width:33%; }
+
+.right_bird img { float:left; }
+
+.left_bird { float:left; width:33%; }
+
+.left_bird img { float:right; }
+
+#english_subject { width:100%; float:left; padding: 0; margin: 0; background:#2c2e2d; }
+
+#english_subject article { padding: 0; background:url(../images/english_bg_02.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; height:903px; }
+  
+.english_book { float:left; width:55%; margin-top:40%; }
+
+.english_book img { vertical-align:bottom; }
+
+.english_part { padding: 0; margin-right: 80px; margin-top:45%; float:left; width:35%; }
+
+.english_part h1 { font-family:Myraid Pro BlackCond; color:#FFF; font-size:64px; padding: 0; margin: 0; }
+
+.english_part p { font-family:Myraid Pro Light; color:#FFF; font-size:15px; padding-right: 38px; margin: 0; line-height:20px; }
+
+#science_lab { width:100%; float:left; padding: 0; margin: 0 auto; background:url(../images/science_lab_bg_02.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; height:903px; }
+
+#science_lab article { margin-top:10%; }
+
+.science_part { padding: 0; margin-top:170px; margin-left:70px; }
+
+.science_part h1 { color:#5f5f5f; font-size:75px; font-family:Myraid Pro BlackCond; padding: 0; margin: 0; line-height:59px; }
+
+.science_part h2 { color:#5e5e5e; font-size:112px; font-family:Myraid Pro BlackCond; padding: 0; margin: 0; line-height:80px; }
+
+.science_part p { font-family:Myraid Pro Light; color:#333333; font-size:18px; padding-right: 38px; margin: 0; line-height:20px; }
+
+
+#library { padding: 0; margin: 0; float:left; width:100%; background:url(../images/library_bg_02.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:903px; }
+
+#library article { padding: 0; margin-top:20%;  }
+
+.library_text { float:left; width:30%; padding: 0; margin-left:150px; }
+
+.library_text h1 { color:#FFF; font-family:Myraid Pro BlackCond; font-size:75px; padding: 0; margin: 0; }
+
+.library_text p { color:#FFF; font-family:Myraid Pro Light; font-size:18px; padding-right: 25px; margin: 0; line-height:20px; }
+
+.book_over_book { float:right; }
+
+.library_logo { padding: 0; margin-left:20px; position:absolute; }
+
+#computer { background:url(../images/computer_bg_02.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; height:905px; float: left; width:100%; }
+
+#computer article { margin-top:20%; }
+
+.computer_part { float:right; padding: 0; margin-top: 100px; margin-right:30px; }
+
+.computer_part h1 { padding: 0; margin: 0; font-family:Myraid Pro BlackCond; color:#242424; font-size:75px; }
+
+.computer_part p { padding: 0; margin: 0; font-family:Myraid Pro Light; color:#242424; font-size:18px; line-height:20px; }
+
+#artlab { padding: 0; margin: 0; background:url(../images/artlab_bg_02.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:100%; width:100%; float:left; }
+
+#artlab article { padding: 0 0 50px 0; margin-top:15%; margin-bottom:15%; }
+
+.artlab_part { padding: 0; margin-top:50px; }
+
+#artlab article h1 { padding: 0; margin: 0; font-family:Myraid Pro BlackCond; color:#073829; font-size:75px; }
+
+
+.art_images a:hover { opacity:0.7; }
+
+#content { width:100%; background:#f4f4f4; float:left; display:block; position:fixed; bottom: 0; }
+
+#content article { padding: 10px 0; }
+
+#content p { float:left; font-family:Myraid Pro; color:#000000; font-size:12px; padding: 0; margin: 0; }
+
+#content span { float:right; font-family:Myraid Pro; color:#000000; font-size:12px; padding:0; margin: 0px 0 0 0; }
+
+@media (max-width: 799px) { .logo a img { margin-left:10px; } .nav_right{ display:none; } }
+
+@media (max-width: 530px) { .artlab_part { margin-left:0px; } .english_part, .library_text, .computer_part, .science_part { margin-top:20px; margin-left:0; margin-left:0; float:none; width:100%; } .english_part p, .computer_part p, .library_text p, .science_part p { padding-right:0; } ..activity_text { margin-top:0px; } }
