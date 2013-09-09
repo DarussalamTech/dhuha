@@ -31,6 +31,16 @@ var dhuha = {
             scrollTop: $("#" + section_id).offset().top
         }, 2000);
     },
+    /**
+     * 
+     * @returns {undefined}
+     */        
+    handleActiveClassTopNav : function (){
+        jQuery("#top_navigation li a").click(function(){
+            jQuery("#top_navigation li a").removeAttr("class");
+            jQuery(this).attr("class","active");
+        })
+    },        
 }
 
 

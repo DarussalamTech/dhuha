@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Dhuha International School Systems</title>
         <link href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/style.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/cstyle.css" rel="stylesheet" />
         <meta charset="utf-8">
 
             <!-- Use the .htaccess and remove these lines to avoid edge case issues.
@@ -70,7 +71,7 @@
                                                                         <span><a href="#">Arabic</a></span>-->
                                                                     </div>
                                                                 </div>
-                                                                <ul class="seven columns">
+                                                                <ul id="top_navigation" class="seven columns">
                                                                     <li><a href="#">Dhuha</a></li>
                                                                     <li><a href="#header" onclick="dhuha.scrolltoSection('header');">Activities</a></li>
                                                                     <li><a href="javascript:void(0)">Courses</a></li>
@@ -253,7 +254,7 @@
                                             <script type="text/javascript">
                                                 jQuery(document).ready(function() {
                                                     dhuha.sideBarLinkHover();
-
+                                                    dhuha.handleActiveClassTopNav();
                                                     if (window.location.hash != "" && window.location.hash != "#") {
                                                         dhuha.scrolltoSection(window.location.hash.substring(1, window.location.hash.length));
                                                     }
