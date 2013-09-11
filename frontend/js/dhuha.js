@@ -18,7 +18,11 @@ var dhuha = {
 
         }, function() {
 
-            //jQuery(this).prev().removeAttr("style");
+            if(window.location.hash !=""){
+                hash_id = window.location.hash.split("#");
+                hash_id = hash_id[1];
+                dhuha.scrolltoSection(hash_id);
+            }
 
         });
     },
@@ -29,7 +33,7 @@ var dhuha = {
      * @returns 
      */
     scrolltoSection: function(section_id) {
-
+       
         jQuery(".header_content p a").removeAttr("class");
         jQuery(".header_content p a").prev().removeAttr("style");
 
