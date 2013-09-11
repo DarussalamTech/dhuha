@@ -2,7 +2,7 @@
 $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
     'attributes' => array(
             'links'=>array(
-                'about_header'=>'Dhuha',
+                'header'=>'Dhuha',
                 'mission'=>'Vision &amp; Mission',
                 'goals'=>'Goals',
             )
