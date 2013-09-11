@@ -72,13 +72,29 @@
                                                                     </div>
                                                                 </div>
                                                                 <ul id="top_navigation" class="seven columns">
-                                                                    <li><a href="#">Dhuha</a></li>
-                                                                    <li><a href="#header" class="active" onclick="dhuha.scrolltoSection('header');">Activities</a></li>
-                                                                    <li><a href="javascript:void(0)">Courses</a></li>
-                                                                    <li><a href="javascript:void(0)">Teaching System</a></li>
-                                                                    <li><a href="javascript:void(0)">Fee Structure</a></li>
-                                                                    <li><a href="javascript:void(0)">Gallery</a></li>
-                                                                    <li><a href="javascript:void(0)">Contact Us</a></li>
+
+                                                                    <?php
+                                                                    $dt_menu_array = array(
+                                                                        "dhuha" => "Dhuha",
+                                                                        "index" => "Activities",
+                                                                        "none1" => "Teaching System",
+                                                                        "none2" => "Fee Structure",
+                                                                        "none3" => "Gallery",
+                                                                        "none4" => "Contact Us",
+                                                                    );
+
+                                                                    foreach ($dt_menu_array as $key => $text) {
+                                                                        echo "<li>";
+                                                                        if ($this->action->id == $key) {
+                                                                            echo CHtml::link($text, $this->createUrl("site/" . $key), array("class" => "active"));
+                                                                        } else {
+                                                                            echo CHtml::link($text, $this->createUrl("site/".$key));
+                                                                        }
+
+                                                                        echo "</li>";
+                                                                    }
+                                                                    ?>
+
                                                                 </ul>
                                                             </div>
                                                             <?php
@@ -86,7 +102,7 @@
                                                                 $this->widget($this->PcmWidget['dt_header']['name'], $this->PcmWidget['dt_header']['attributes']);
                                                             }
                                                             ?>
-                                                         
+
                                                         </div>
                                                     </div>
                                                 </header>
@@ -97,12 +113,12 @@
                                             <!-- Grab Google CDN's jQuery, fall back to local if offline -->
                                             <!-- 2.0 for modern browsers, 1.10 for .oldie -->
                                             <script>
-                                                                        var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-                                                                        if (!oldieCheck) {
-                                                                            document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-                                                                        } else {
-                                                                            document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-                                                                        }
+                                                var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+                                                if (!oldieCheck) {
+                                                    document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+                                                } else {
+                                                    document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+                                                }
                                             </script>
                                             <script>
                                                 if (!window.jQuery) {
