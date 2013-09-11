@@ -43,12 +43,12 @@
                                                 <header>
                                                     <div id="header">
                                                         <div class="header_content">
-                                                            <p><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> <a href="#header" onclick="dhuha.scrolltoSection('header');">Activites</a></p>
-                                                            <p><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> <a href="#english_subject" onclick="dhuha.scrolltoSection('english_subject');">English</a></p>
-                                                            <p><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> <a href="#science_lab" onclick="dhuha.scrolltoSection('science_lab');">Science</a></p>
-                                                            <p><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> <a href="#library" onclick="dhuha.scrolltoSection('library');">Library</a></p>
-                                                            <p><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> <a href="#computer" onclick="dhuha.scrolltoSection('computer');">Computer</a></p>
-                                                            <p><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> <a href="#artlab" onclick="dhuha.scrolltoSection('artlab');">Art</a></p>
+                                                            <p><a href="#header" onclick="dhuha.scrolltoSection('header');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg">Activites</a></p>
+                                                            <p><a href="#english_subject" onclick="dhuha.scrolltoSection('english_subject');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> English</a></p>
+                                                            <p><a href="#science_lab" onclick="dhuha.scrolltoSection('science_lab');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg">Science</a></p>
+                                                            <p><a href="#library" onclick="dhuha.scrolltoSection('library');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg">Library</a></p>
+                                                            <p><a href="#computer" onclick="dhuha.scrolltoSection('computer');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> Computer</a></p>
+                                                            <p><a href="#artlab" onclick="dhuha.scrolltoSection('artlab');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> Art</a></p>
                                                         </div>
                                                         <div class="row">
                                                             <div class="navbar row" id="nav2">
