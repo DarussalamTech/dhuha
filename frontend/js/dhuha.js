@@ -21,7 +21,7 @@ var dhuha = {
             if(window.location.hash !=""){
                 hash_id = window.location.hash.split("#");
                 hash_id = hash_id[1];
-                dhuha.scrolltoSection(hash_id);
+                dhuha.makeActiveLink(hash_id);
             }
 
         });
@@ -42,12 +42,18 @@ var dhuha = {
 
         jQuery('html, body').animate({
             scrollTop: $("#" + section_id).offset().top,
-        }, 2000, function() {
-
+        }, 1000, function() {
 
         });
 
+    },
+    makeActiveLink : function(section_id){
+        jQuery(".header_content p a").removeAttr("class");
+        jQuery(".header_content p a").prev().removeAttr("style");
 
+        jQuery(".header_content p a[href=#" + section_id + "]").attr("class", "hover");
+        jQuery(".header_content p a[href=#" + section_id + "]").prev().attr("style", "height:20px;width:25px");
+        
     },
     /**
      * 
