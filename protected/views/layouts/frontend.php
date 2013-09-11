@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Dhuha International School Systems</title>
         <link href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/style.css" rel="stylesheet" />
+
         <link href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/cstyle.css" rel="stylesheet" />
         <meta charset="utf-8">
 
@@ -43,12 +44,11 @@
                                                 <header>
                                                     <div id="header">
                                                         <div class="header_content">
-                                                            <p><a href="#header" onclick="dhuha.scrolltoSection('header');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg">Activites</a></p>
-                                                            <p><a href="#english_subject" onclick="dhuha.scrolltoSection('english_subject');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> English</a></p>
-                                                            <p><a href="#science_lab" onclick="dhuha.scrolltoSection('science_lab');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg">Science</a></p>
-                                                            <p><a href="#library" onclick="dhuha.scrolltoSection('library');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg">Library</a></p>
-                                                            <p><a href="#computer" onclick="dhuha.scrolltoSection('computer');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> Computer</a></p>
-                                                            <p><a href="#artlab" onclick="dhuha.scrolltoSection('artlab');"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/fixed_red_color_02.jpg"> Art</a></p>
+                                                            <?php
+                                                            if (isset($this->PcmWidget['side_menu'])) {
+                                                                $this->widget($this->PcmWidget['side_menu']['name'], $this->PcmWidget['side_menu']['attributes']);
+                                                            }
+                                                            ?>
                                                         </div>
                                                         <div class="row">
                                                             <div class="navbar row" id="nav2">
@@ -81,138 +81,28 @@
                                                                     <li><a href="javascript:void(0)">Contact Us</a></li>
                                                                 </ul>
                                                             </div>
-                                                            <div id="activites">
-                                                                <div class="left_bird">
-                                                                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/bird-2.png" />
-                                                                </div>
-                                                                <div class="activity_text">
-                                                                    <h1>ACTIVITIES</h1>
-                                                                    <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/logo.png" /></a>
-                                                                </div>
-                                                                <div class="right_bird">
-                                                                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/bird.png" />
-                                                                </div>
-                                                            </div>
+                                                            <?php
+                                                            if (isset($this->PcmWidget['dt_header'])) {
+                                                                $this->widget($this->PcmWidget['dt_header']['name'], $this->PcmWidget['dt_header']['attributes']);
+                                                            }
+                                                            ?>
+                                                         
                                                         </div>
                                                     </div>
                                                 </header>
-                                                <section id="english_subject">
-                                                    <article>
-                                                        <div class="row">
-                                                            <div class="twelve columns">
-                                                                <div class="english_book">
-                                                                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/book.png" />
-                                                                </div>
-                                                                <div class="english_part">
-                                                                    <h1>ENGLISH LAB</h1>
-                                                                    <p>Students are provided with special classes for English as a 'Second Language'. The classes are based on the four skills of English language i.e reading, writing, listening and speaking along with grammar &amp; pronunciation lessons.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                                <section id="science_lab">
-                                                    <article>
-                                                        <div class="row">
-                                                            <div class="twelve columns">
-                                                                <div class="five columns">
-                                                                    <div class="science_part">
-                                                                        <h1>SCIENCE</h1>
-                                                                        <h2>LABS</h2>
-                                                                        <p>Physics, Chemistry and Biology labs are equipped with apparatus and the material required for conducting practicals for middle and higher classes.</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="six columns">
-                                                                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/butterfly.png" />
-                                                                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/flask.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                                <section id="library">
-                                                    <article>
-                                                        <div class="row">
-                                                            <div class="library_text">
-                                                                <h1>LIBRARY</h1>
-                                                                <p>School libraries help children to discover for themselves by independent study and learning how to ask questions. A good enough library which provides all the books to facilitate the students. This study assesses the educational development of students and library use by students and the problems encountered.</p>
-                                                            </div>
-                                                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/library_logo_03.png" class="library_logo" />
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                                <section id="computer">
-                                                    <article>
-                                                        <div class="row">
-                                                            <div class="twelve columns">
-                                                                <div class="six columns">
-                                                                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/computer.png" />
-                                                                </div>
-                                                                <div class="six columns">
-                                                                    <div class="computer_part">
-                                                                        <h1>COMPUTER</h1>
-                                                                        <p>Our state-of-the-art computer lab provides access to interactive education to all students of our school. Students are acquainted with Information and Communications Technology from a grass roots level. We have the latest computers and we make sure that every student has access to a computer.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                                <section id="artlab">
-                                                    <article>
-                                                        <div class="row">
-                                                            <div class="twelve columns">
-                                                                <div class="artlab_part">
-                                                                    <h1>ART LAB</h1>
-                                                                    <div class="art_images">
-                                                                        <div class="four columns">
-                                                                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
-                                                                        </div>
-                                                                        <div class="four columns">
-                                                                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
-                                                                        </div>
-                                                                        <div class="four columns">
-                                                                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="art_images">
-                                                                        <div class="four columns">
-                                                                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
-                                                                        </div>
-                                                                        <div class="four columns">
-                                                                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
-                                                                        </div>
-                                                                        <div class="four columns">
-                                                                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                                <section id="content">
-                                                    <article>
-                                                        <div class="row">
-                                                            <div class="twelve columns">
-                                                                <p>All rights reserved. Dhuha International School</p>
-                                                                <span>Crafted at Dtech</span>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
+                                                <?php echo $content ?>
                                             </div>
 
 
                                             <!-- Grab Google CDN's jQuery, fall back to local if offline -->
                                             <!-- 2.0 for modern browsers, 1.10 for .oldie -->
                                             <script>
-                                                                var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-                                                                if (!oldieCheck) {
-                                                                    document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-                                                                } else {
-                                                                    document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-                                                                }
+                                                                        var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+                                                                        if (!oldieCheck) {
+                                                                            document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+                                                                        } else {
+                                                                            document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+                                                                        }
                                             </script>
                                             <script>
                                                 if (!window.jQuery) {
@@ -258,6 +148,9 @@
                                                     if (window.location.hash != "" && window.location.hash != "#") {
                                                         dhuha.scrolltoSection(window.location.hash.substring(1, window.location.hash.length));
                                                     }
+
+                                                    dhuha.makeCurrentActiveLab();
+
                                                 })
                                             </script>
                                             <!-- Change UA-XXXXX-X to be your site's ID -->
