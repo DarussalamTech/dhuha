@@ -73,7 +73,7 @@
                                                                 </div>
                                                                 <ul id="top_navigation" class="seven columns">
                                                                     <li><a href="#">Dhuha</a></li>
-                                                                    <li><a href="#header" onclick="dhuha.scrolltoSection('header');">Activities</a></li>
+                                                                    <li><a href="#header" class="active" onclick="dhuha.scrolltoSection('header');">Activities</a></li>
                                                                     <li><a href="javascript:void(0)">Courses</a></li>
                                                                     <li><a href="javascript:void(0)">Teaching System</a></li>
                                                                     <li><a href="javascript:void(0)">Fee Structure</a></li>

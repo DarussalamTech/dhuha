@@ -12,3 +12,7 @@ ul#top_navigation li a.active {
     color:#be1d2c;
     text-decoration: underline;
 }
+
+.header_content p a.hover {
+    font-size: 32px;
+}
