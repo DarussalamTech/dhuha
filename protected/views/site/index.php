@@ -71,7 +71,7 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                 </div>
                 <div class="six columns">
                     <div class="computer_part">
-                        <h1>COMPUTER</h1>
+                        <h1>COMPUTER LAB</h1>
                         <p>Our state-of-the-art computer lab provides access to interactive education to all students of our school. Students are acquainted with Information and Communications Technology from a grass roots level. We have the latest computers and we make sure that every student has access to a computer.</p>
                     </div>
                 </div>
