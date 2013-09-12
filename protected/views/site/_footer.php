@@ -2,7 +2,7 @@
     <article>
         <div class="row">
             <div class="twelve columns">
-                <p>All rights reserved.&COPY; Dhuha International School 2013</p>
+                <p>&COPY; Dhuha International School 2013</p>
                 <span>Crafted at @ Dtech Systems</span>
             </div>
         </div>
