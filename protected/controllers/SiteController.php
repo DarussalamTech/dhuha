@@ -85,11 +85,18 @@ class SiteController extends Controller {
         $this->render("teachingsystem");
     }
     /**
-     * Teaching action
+     * Fee action
      */
     public function actionFeestructure() {
         $this->layout = "frontend";
         $this->render("feestructure");
+    }
+    /**
+     * Fee action
+     */
+    public function actionContactus() {
+        $this->layout = "frontend";
+        $this->render("contactus");
     }
 
     /**

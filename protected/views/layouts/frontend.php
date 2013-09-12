@@ -81,7 +81,7 @@
                                                                         "teachingsystem" => "Teaching System",
                                                                         "feestructure" => "Fee Structure",
                                                                         "none3" => "Gallery",
-                                                                        "none4" => "Contact Us",
+                                                                        "contactus" => "Contact Us",
                                                                     );
 
                                                                     foreach ($dt_menu_array as $key => $text) {
