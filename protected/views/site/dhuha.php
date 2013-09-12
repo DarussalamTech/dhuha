@@ -64,15 +64,11 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
         </div>
     </article>
 </section>
-<section id="content">
-    <article>
-        <div class="row">
-            <div class="twelve columns">
-                <p>All rights reserved. Dhuha International School</p>
-                <span>Crafted at Dtech</span>
-            </div>
-        </div>
-    </article>
-</section>
+<?php
+/**
+ * rendering footer
+ */
+$this->renderPartial("/site/_footer");
+?>
 
 <link href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/dhuha.css" rel="stylesheet" />

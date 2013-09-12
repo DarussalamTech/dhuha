@@ -31,7 +31,7 @@ class SiteController extends Controller {
         $this->layout = "frontend";
 
 
-        $this->render("index", array("model" => $model));
+        $this->render("index");
     }
 
     /**

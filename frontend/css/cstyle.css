@@ -35,3 +35,7 @@ ul#top_navigation li a.active {
 .contact_us textArea.error {
     background: red;
 }
+span.staric {
+    color: red;
+    font-size: 14px;
+}

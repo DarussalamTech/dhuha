@@ -17,15 +17,15 @@
         ?>
         <table>
             <tr>
-                <td class="left_contact"><?php echo $model->getAttributeLabel("name"); ?>:</td>
+                <td class="left_contact"><?php echo $model->getAttributeLabel("name"); ?>:<span class="staric">*</span></td>
                 <td class="right_contact">  <?php echo $form->textField($model, 'name'); ?></td>
             </tr>
             <tr>
-                <td class="left_contact">  <?php echo $model->getAttributeLabel("email"); ?>:</td>
+                <td class="left_contact">  <?php echo $model->getAttributeLabel("email"); ?>:<span class="staric">*</span></td>
                 <td class="right_contact"> <?php echo $form->textField($model, 'email'); ?></td>
             </tr>
             <tr>
-                <td class="left_contact"> <?php echo $model->getAttributeLabel("subject"); ?>:</td>
+                <td class="left_contact"> <?php echo $model->getAttributeLabel("subject"); ?>:<span class="staric">*</span></td>
                 <td class="right_contact">            <?php echo $form->textField($model, 'subject', array('size' => 60, 'maxlength' => 128)); ?></td>
             </tr>
             <tr>
