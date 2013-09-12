@@ -11,9 +11,13 @@
 
 @font-face { font-family:Myraid Pro Cond; src:url(../fonts/MYRIADPRO-COND.OTF); }
 
-@font-face { font-family:Myraid Pro Light; src:url(../fonts/MYRIADPRO-LIGHT.otf); }
+@font-face { font-family:Myraid Pro Light; src:url(../fonts/MYRIADPRO-LIGHT.OTF); }
 
 @font-face { font-family:Myraid Pro Black; src:url(../fonts/MYRIADPRO-BLACK.OTF); }
+
+@font-face { font-family:Myraid Pro BoldSemiCnd; src:url(../fonts/MyriadPro-BoldSemiCn.OTF); }
+
+@font-face { font-family:Myraid Pro SemiBoldCnd; src:url(../fonts/MYRIADPRO-SEMIBOLDCOND.OTF); }
 
 html, body { padding: 0; margin: 0; }
 
