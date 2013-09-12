@@ -24,7 +24,7 @@ ul#top_navigation li a.active {
     font-size: 32px;
 }
 .header_content p a.hover img {
-       height:20px;width:25px
+    height:20px;width:25px
 }
 .send_btn {
     cursor: pointer;
@@ -38,4 +38,18 @@ ul#top_navigation li a.active {
 span.staric {
     color: red;
     font-size: 14px;
+}
+
+
+.contact_us img {
+
+    margin-top: 8px;
+
+}
+.contact_us a {
+    clear:both;
+    color: #000000;
+    font-family: Myraid Pro;
+    font-size: 14px;
+    margin-left: 12px;
 }

@@ -32,6 +32,22 @@
                 <td class="left_contact">   <?php echo $model->getAttributeLabel("body"); ?>:</td>
                 <td class="right_contact">            <?php echo $form->textArea($model, 'body', array('rows' => 6, 'cols' => 50)); ?></td>
             </tr>
+            <tr>
+                <td class="left_contact">   <?php echo $model->getAttributeLabel("verifyCode"); ?>:</td>
+                <td class="right_contact">  
+                    <?php $this->widget('CCaptcha'); ?>
+                   
+                </td>
+            </tr>
+            <tr>
+                <td class="left_contact">  </td>
+                <td class="right_contact">  
+                 
+                    <?php echo $form->textField($model, 'verifyCode'); ?>
+                </td>
+            </tr>
+
+           
         </table>
         <?php echo CHtml::submitButton('Send', array("class" => "send_btn")); ?>
         <?php $this->endWidget(); ?>
