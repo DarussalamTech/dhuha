@@ -29,6 +29,48 @@ class SiteController extends Controller {
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
         $this->layout = "frontend";
+
+
+        $this->render("index", array("model" => $model));
+    }
+
+    /**
+     * dhuha action
+     */
+    public function actionDhuha() {
+        $this->layout = "frontend";
+        $this->render("dhuha");
+    }
+
+    /**
+     * courses action
+     */
+    public function actionCourses() {
+        $this->layout = "frontend";
+        $this->render("course");
+    }
+
+    /**
+     * Teaching action
+     */
+    public function actionTeachingsystem() {
+        $this->layout = "frontend";
+        $this->render("teachingsystem");
+    }
+
+    /**
+     * Fee action
+     */
+    public function actionFeestructure() {
+        $this->layout = "frontend";
+        $this->render("feestructure");
+    }
+
+    /**
+     * Fee action
+     */
+    public function actionContactus() {
+        $this->layout = "frontend";
         $model = new ContactForm;
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
@@ -55,48 +97,10 @@ class SiteController extends Controller {
                 $this->sendEmail2($email);
                 Yii::app()->user->setFlash('email_status', 'Thank you ! for your feedback');
 
-                $this->redirect($this->createUrl("index") . "#contact_us");
+                $this->redirect($this->createUrl("contactus"));
             }
         }
-
-
-        $this->render("index", array("model" => $model));
-    }
-
-    /**
-     * dhuha action
-     */
-    public function actionDhuha() {
-        $this->layout = "frontend";
-        $this->render("dhuha");
-    }
-    /**
-     * courses action
-     */
-    public function actionCourses() {
-        $this->layout = "frontend";
-        $this->render("course");
-    }
-    /**
-     * Teaching action
-     */
-    public function actionTeachingsystem() {
-        $this->layout = "frontend";
-        $this->render("teachingsystem");
-    }
-    /**
-     * Fee action
-     */
-    public function actionFeestructure() {
-        $this->layout = "frontend";
-        $this->render("feestructure");
-    }
-    /**
-     * Fee action
-     */
-    public function actionContactus() {
-        $this->layout = "frontend";
-        $this->render("contactus");
+        $this->render("contactus", array("model" => $model));
     }
 
     /**

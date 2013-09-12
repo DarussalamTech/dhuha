@@ -13,7 +13,13 @@
 Yii::import('zii.widgets.CPortlet');
 class DTHeaderPart extends CPortlet {
 
+    /**
+     * render the view
+     * @var type 
+     */
     public $viewName;
+    
+    public $model ;
     /**
      * Init 
      */

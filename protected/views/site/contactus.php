@@ -1,7 +1,8 @@
 <?php
 $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
     'attributes' => array(
-        'viewName' => "/common/_contact_us"
+        'viewName' => "/common/_contact_us",
+        "model" => $model,
         ));
 ?>
 

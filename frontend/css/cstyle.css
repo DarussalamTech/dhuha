@@ -26,3 +26,12 @@ ul#top_navigation li a.active {
 .header_content p a.hover img {
        height:20px;width:25px
 }
+.send_btn {
+    cursor: pointer;
+}
+.contact_us input[type="text"].error {
+    background: red;
+}
+.contact_us textArea.error {
+    background: red;
+}

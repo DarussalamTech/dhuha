@@ -6,24 +6,34 @@
         <p>Tel: 01– 4011368 , 4092966 </p>
         <p>Fax: 01 - 4092977</p>
         <p>info@dhuhaschool.com</p>
+        <?php
+        $form = $this->beginWidget('CActiveForm', array(
+            'id' => 'contact-form',
+            'enableClientValidation' => true,
+            'clientOptions' => array(
+                'validateOnSubmit' => true,
+            ),
+        ));
+        ?>
         <table>
             <tr>
-                <td class="left_contact">Name:</td>
-                <td class="right_contact"><input type="text" ></td>
+                <td class="left_contact"><?php echo $model->getAttributeLabel("name"); ?>:</td>
+                <td class="right_contact">  <?php echo $form->textField($model, 'name'); ?></td>
             </tr>
             <tr>
-                <td class="left_contact">Email:</td>
-                <td class="right_contact"><input type="text" ></td>
+                <td class="left_contact">  <?php echo $model->getAttributeLabel("email"); ?>:</td>
+                <td class="right_contact"> <?php echo $form->textField($model, 'email'); ?></td>
             </tr>
             <tr>
-                <td class="left_contact">Subject:</td>
-                <td class="right_contact"><input type="text" ></td>
+                <td class="left_contact"> <?php echo $model->getAttributeLabel("subject"); ?>:</td>
+                <td class="right_contact">            <?php echo $form->textField($model, 'subject', array('size' => 60, 'maxlength' => 128)); ?></td>
             </tr>
             <tr>
-                <td class="left_contact">Message:</td>
-                <td class="right_contact"><textarea cols="" rows="5"></textarea></td>
+                <td class="left_contact">   <?php echo $model->getAttributeLabel("body"); ?>:</td>
+                <td class="right_contact">            <?php echo $form->textArea($model, 'body', array('rows' => 6, 'cols' => 50)); ?></td>
             </tr>
         </table>
-        <input type="button" value="Send" class="send_btn" />
+        <?php echo CHtml::submitButton('Send', array("class" => "send_btn")); ?>
+        <?php $this->endWidget(); ?>
     </div>
 </div>
