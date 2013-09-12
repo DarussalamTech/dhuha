@@ -5,8 +5,8 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
             'header' => 'Activites',
             'english_subject' => 'English',
             'science_lab' => 'Science',
-            'library' => 'Library',
             'computer' => 'Computer',
+            'library' => 'Library',
             'artlab' => 'Art',
         )
         ));
@@ -51,17 +51,7 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
     </article>
 </section>
 
-<section id="library">
-    <article>
-        <div class="row">
-            <div class="library_text">
-                <h1>LIBRARY</h1>
-                <p>School libraries help children to discover for themselves by independent study and learning how to ask questions. A good enough library which provides all the books to facilitate the students. This study assesses the educational development of students and library use by students and the problems encountered.</p>
-            </div>
-            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/library_logo_03.png" class="library_logo" />
-        </div>
-    </article>
-</section>
+
 <section id="computer">
     <article>
         <div class="row">
@@ -76,6 +66,17 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                     </div>
                 </div>
             </div>
+        </div>
+    </article>
+</section>
+<section id="library">
+    <article>
+        <div class="row">
+            <div class="library_text">
+                <h1>LIBRARY</h1>
+                <p>School libraries help children to discover for themselves by independent study and learning how to ask questions. A good enough library which provides all the books to facilitate the students. This study assesses the educational development of students and library use by students and the problems encountered.</p>
+            </div>
+            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/library_logo_03.png" class="library_logo" />
         </div>
     </article>
 </section>
