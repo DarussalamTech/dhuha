@@ -78,8 +78,8 @@
                                                                         "dhuha" => "Dhuha",
                                                                         "index" => "Activities",
                                                                         "courses" => "Courses",
-                                                                        "none1" => "Teaching System",
-                                                                        "none2" => "Fee Structure",
+                                                                        "teachingsystem" => "Teaching System",
+                                                                        "feestructure" => "Fee Structure",
                                                                         "none3" => "Gallery",
                                                                         "none4" => "Contact Us",
                                                                     );

@@ -71,11 +71,25 @@ class SiteController extends Controller {
         $this->render("dhuha");
     }
     /**
-     * dhuha action
+     * courses action
      */
     public function actionCourses() {
         $this->layout = "frontend";
         $this->render("course");
+    }
+    /**
+     * Teaching action
+     */
+    public function actionTeachingsystem() {
+        $this->layout = "frontend";
+        $this->render("teachingsystem");
+    }
+    /**
+     * Teaching action
+     */
+    public function actionFeestructure() {
+        $this->layout = "frontend";
+        $this->render("feestructure");
     }
 
     /**

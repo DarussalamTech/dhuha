@@ -1,0 +1,24 @@
+
+header { width:100%; margin: 0; padding: 0; height:100%; height:903px; min-height:100%; background:url(../images/about_us_bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+.contact_us { height:100%; display:block; margin-top:8%; margin-bottom:28% !important; margin-right:auto; margin-left:auto; width:80%; }
+
+.contact_us h1 { color:#414740; font-size:44px; font-family:Myraid Pro BoldCond; }
+
+.contact_us p { color:#414740; font-size:15px; font-family:Myraid Pro; line-height:18px; padding: 0; margin: 0; }
+
+.contact_us table { background:none; border:none; padding: 0; margin-top: 20px; width:100%; }
+
+.contact_us table tr { border:none; width:100%; }
+
+.contact_us table td { border:none; padding: 0; margin: 0; color:#414740; font-family:Myraid Pro; font-size:18px; }
+
+.contact_us input[type='text'] { width:40%; border: none; border: 1px solid #414740; height:30px; margin-top:8px; }
+
+.contact_us textarea { width:40%; border: none; border: 1px solid #414740; margin-top:8px; }
+
+.left_contact { width:15%; padding-top:10px !important; }
+
+.right_contact { width:75%; }
+
+.send_btn { color:#414740; font-size:17px; font-family:Myraid Pro; padding: 0; margin: 0; background:none; border:none; background:#FFF; border: 1px solid #414740; width:71px; padding: 5px 0; }
