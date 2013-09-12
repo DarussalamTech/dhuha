@@ -77,6 +77,7 @@
                                                                     $dt_menu_array = array(
                                                                         "dhuha" => "Dhuha",
                                                                         "index" => "Activities",
+                                                                        "courses" => "Courses",
                                                                         "none1" => "Teaching System",
                                                                         "none2" => "Fee Structure",
                                                                         "none3" => "Gallery",

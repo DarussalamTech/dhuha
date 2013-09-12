@@ -70,6 +70,13 @@ class SiteController extends Controller {
         $this->layout = "frontend";
         $this->render("dhuha");
     }
+    /**
+     * dhuha action
+     */
+    public function actionCourses() {
+        $this->layout = "frontend";
+        $this->render("course");
+    }
 
     /**
      * This is the action to handle external exceptions.
