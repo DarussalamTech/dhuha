@@ -6,6 +6,15 @@
         <p>Tel: 01– 4011368 , 4092966 </p>
         <p>Fax: 01 - 4092977</p>
         <p>info@dhuhaschool.com</p>
+        <span class="flash-message">
+
+            <?php
+            if (Yii::app()->user->hasFlash('email_status')):
+
+                echo Yii::app()->user->getFlash('email_status');
+            endif;
+            ?>
+        </span>
         <?php
         $form = $this->beginWidget('CActiveForm', array(
             'id' => 'contact-form',
@@ -36,18 +45,18 @@
                 <td class="left_contact">   <?php echo $model->getAttributeLabel("verifyCode"); ?>:</td>
                 <td class="right_contact">  
                     <?php $this->widget('CCaptcha'); ?>
-                   
+
                 </td>
             </tr>
             <tr>
                 <td class="left_contact">  </td>
                 <td class="right_contact">  
-                 
+
                     <?php echo $form->textField($model, 'verifyCode'); ?>
                 </td>
             </tr>
 
-           
+
         </table>
         <?php echo CHtml::submitButton('Send', array("class" => "send_btn")); ?>
         <?php $this->endWidget(); ?>

@@ -53,3 +53,11 @@ span.staric {
     font-size: 14px;
     margin-left: 12px;
 }
+
+.flash-message {
+     font-family: Myraid Pro;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: green;
+}
