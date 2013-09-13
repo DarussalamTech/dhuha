@@ -29,6 +29,10 @@ ul#top_navigation li a.active {
 .send_btn {
     cursor: pointer;
 }
+.send_btn:hover {
+    color:white;
+    background: #414740;
+}
 .contact_us input[type="text"].error {
     border-color: red;
 }
