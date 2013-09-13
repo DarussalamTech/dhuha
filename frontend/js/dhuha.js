@@ -8,9 +8,10 @@ var dhuha = {
      * will take to top of the page
      * @returns 
      */
+    hash_sign : "",
     sideBarLinkHover: function() {
         jQuery(".header_content p a").hover(function() {
-            jQuery(".header_content p a").removeAttr("class");
+            //jQuery(".header_content p a").removeAttr("class");
 
         }, function() {
 
@@ -19,6 +20,10 @@ var dhuha = {
                 hash_id = window.location.hash.split("#");
                 hash_id = hash_id[1];
                 dhuha.makeActiveLink(hash_id);
+            }
+            else if (dhuha.hash_sign != "") {
+
+                dhuha.makeActiveLink(dhuha.hash_sign);
             }
             else {
 
@@ -45,6 +50,27 @@ var dhuha = {
 
         });
 
+    },
+    registerSidebarLink: function() {
+
+        jQuery(".sidebar_link").click(function(event) {
+           
+            var full_url = jQuery(this).attr("href");
+            var section_id = full_url.replace("#", "");
+
+            event.preventDefault();
+            jQuery(".header_content p a").removeAttr("class");
+
+            jQuery(".header_content p a[href=#" + section_id + "]").attr("class", "hover");
+            
+            dhuha.hash_sign = section_id;
+
+            jQuery('html, body').animate({
+                scrollTop: $("#" + section_id).offset().top,
+            }, 1000, function() {
+
+            });
+        })
     },
     makeActiveLink: function(section_id) {
         jQuery(".header_content p a").removeAttr("class");
@@ -76,16 +102,16 @@ var dhuha = {
             jQuery('section').each(function() {
                 if (jQuery(this).offset().top > cutoff && jQuery(this).offset().top < cutoffRange) {
                     dhuha.makeActiveLink(jQuery(this).attr("id"));
-                   
+
                 }
             });
             /**
              * special case for header
              */
             if (jQuery("#header").offset().top == cutoff) {
-                    dhuha.makeActiveLink("header");
-                  
-                   
+                dhuha.makeActiveLink("header");
+
+
             }
         })
 

@@ -170,6 +170,7 @@
                                                     }
 
                                                     dhuha.makeCurrentActiveLab();
+                                                    dhuha.registerSidebarLink();
 
                                                 })
                                             </script>
