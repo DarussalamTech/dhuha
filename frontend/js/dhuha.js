@@ -39,9 +39,9 @@ var dhuha = {
      */
     scrolltoSection: function(section_id) {
 
-        jQuery(".header_content p a").removeAttr("class");
+        jQuery(".header_content ul li a").removeAttr("class");
 
-        jQuery(".header_content p a[href=#" + section_id + "]").attr("class", "hover");
+        jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
 
 
         jQuery('html, body').animate({
@@ -59,9 +59,9 @@ var dhuha = {
             var section_id = full_url.replace("#", "");
 
             event.preventDefault();
-            jQuery(".header_content p a").removeAttr("class");
+            jQuery(".header_content ul li a").removeAttr("class");
 
-            jQuery(".header_content p a[href=#" + section_id + "]").attr("class", "hover");
+            jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
             
             dhuha.hash_sign = section_id;
 
