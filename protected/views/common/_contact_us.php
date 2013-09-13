@@ -15,6 +15,15 @@
             endif;
             ?>
         </span>
+        <span class="error-message">
+
+            <?php
+            if ($model->hasErrors()):
+
+               echo "* These fields cannot be empty";
+            endif;
+            ?>
+        </span>
         <?php
         $form = $this->beginWidget('CActiveForm', array(
             'id' => 'contact-form',

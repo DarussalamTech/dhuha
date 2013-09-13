@@ -76,7 +76,7 @@ class SiteController extends Controller {
             $model->attributes = $_POST['ContactForm'];
           
             if ($model->validate()) {
-                 CVarDumper::dump($model->getErrors(),10,true);
+                 
                 $contactM = new ContactFeedback;
                 $contactM->email = $model->email;
                 $contactM->name = $model->name;

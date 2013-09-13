@@ -30,10 +30,10 @@ ul#top_navigation li a.active {
     cursor: pointer;
 }
 .contact_us input[type="text"].error {
-    background: red;
+    border-color: red;
 }
 .contact_us textArea.error {
-    background: red;
+    border-color: red;
 }
 span.staric {
     color: red;
@@ -60,6 +60,13 @@ span.staric {
     margin: 0;
     padding: 0;
     color: green;
+}
+.error-message {
+     font-family: Myraid Pro;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: red;
 }
 .second-table {
     margin-top:40px;
