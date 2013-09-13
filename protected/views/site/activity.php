@@ -14,7 +14,14 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
     'attributes' => array(
         'viewName' => "/common/_index"
         ));
+
+$this->PcmWidget['lightbox'] = array('name' => 'DTLightBox',
+    'attributes' => array(
+        
+        ));
 ?>
+
+
 <section id="english_subject">
     <article>
 
@@ -80,6 +87,7 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
         </div>
     </article>
 </section>
+
 <section id="artlab">
     <article>
         <div class="row">
@@ -88,24 +96,24 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                     <h1>ART LAB</h1>
                     <div class="art_images">
                         <div class="four columns">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
+                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
                         </div>
                         <div class="four columns">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
+                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
                         </div>
                         <div class="four columns">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
+                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
                         </div>
                     </div>
                     <div class="art_images">
                         <div class="four columns">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
+                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
                         </div>
                         <div class="four columns">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
+                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
                         </div>
                         <div class="four columns">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
+                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
                         </div>
                     </div>
                 </div>

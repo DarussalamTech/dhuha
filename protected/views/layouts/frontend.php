@@ -7,7 +7,10 @@
 
         <link href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/cstyle.css" rel="stylesheet" />
         <meta charset="utf-8">
-
+            <script>
+                var yii_base_url = "<?php echo Yii::app()->baseUrl; ?>";
+                var yii_base_theme_url = "<?php echo Yii::app()->baseUrl; ?>";
+            </script>
             <!-- Use the .htaccess and remove these lines to avoid edge case issues.
                              More info: h5bp.com/b/378 -->
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -89,7 +92,7 @@
                                                                         if ($this->action->id == $key) {
                                                                             echo CHtml::link($text, $this->createUrl("site/" . $key), array("class" => "active"));
                                                                         } else {
-                                                                            echo CHtml::link($text, $this->createUrl("site/".$key));
+                                                                            echo CHtml::link($text, $this->createUrl("site/" . $key));
                                                                         }
 
                                                                         echo "</li>";
@@ -170,6 +173,16 @@
 
                                                 })
                                             </script>
+
+                                            <?php
+                                            if (isset($this->PcmWidget['lightbox'])) {
+                                                ?>
+                                                <script src="<?php echo Yii::app()->baseUrl; ?>/frontend/lightbox/js/lightbox-2.6.min.js"></script>
+                                                <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/frontend/lightbox/css/lightbox.css" media="screen"/>
+                                                <?php
+                                            }
+                                            ?>
+
                                             <!-- Change UA-XXXXX-X to be your site's ID -->
                                             <!--<script>
                                             window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];

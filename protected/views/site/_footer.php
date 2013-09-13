@@ -3,7 +3,7 @@
         <div class="row">
             <div class="twelve columns">
                 <p>&COPY; Dhuha International School 2013</p>
-                <span>Crafted at @ Dtech Systems</span>
+                <span>Crafted @ Dtech Systems</span>
             </div>
         </div>
     </article>
