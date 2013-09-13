@@ -15,7 +15,7 @@ include '_config/_conf_params.php';
 
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'Dhuha International School Systems<',
+    'name' => 'Dhuha International School Systems',
     'theme' => 'default',
     // preloading 'log' component
     'preload' => array('log'),
