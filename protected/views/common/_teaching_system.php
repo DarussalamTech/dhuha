@@ -25,5 +25,8 @@
         <h2>Follow-Up:</h2>
         <p>The progress of each student is continuously followed up and all students receive the support needed. Every available means is used to help those who fall behind to catch up. They are advised in study techniques,
             Motivated by the academic staff and encouraged by receiving help from peer-tutors or teachers. Also regular parent-teacher meetings are held to keep the parents in picture.</p>
+        
+        <p>&nbsp;</p>
+                <p>&nbsp;</p>
     </div>
 </div>
