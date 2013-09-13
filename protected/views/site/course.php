@@ -504,7 +504,8 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                             <td class="two_left_td">4</td>
                             <td class="two_right_td">Count Down 7th</td>
                         </tr>
-                        <table>
+                         </table>
+                        <table class="second-table">
                             <tr class="two_so_dark_course">
                                 <td class="two_left_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Sr. No.</td>
                                 <td class="two_right_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Title of Book Term-II</td>
@@ -530,7 +531,7 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                                 <td class="two_right_td">Studies in Islam Darusalam</td>
                             </tr>
                         </table>
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -584,40 +585,41 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                                 <td class="three_left_td">9</td>
                                 <td class="three_right_td">Quran</td>
                             </tr>
-                            <table>
-                                <tr class="three_so_dark_course">
-                                    <td class="three_left_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Sr. No.</td>
-                                    <td class="three_right_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Title of Book Term-II</td>
-                                </tr>
-                                <tr class="three_light_course">
-                                    <td class="three_left_td">10</td>
-                                    <td class="three_right_td">Mathematics 9</td>
-                                </tr>
-                                <tr class="three_dark_course">
-                                    <td class="three_left_td">11</td>
-                                    <td class="three_right_td">Urdu 8</td>
-                                </tr>
-                                <tr class="three_light_course">
-                                    <td class="three_left_td">12</td>
-                                    <td class="three_right_td">Quick Way To Learn Computer VIII</td>
-                                </tr>
-                                <tr class="three_dark_course">
-                                    <td class="three_left_td">13</td>
-                                    <td class="three_right_td">Islamiat Compulsory</td>
-                                </tr>
-                                <tr class="three_light_course">
-                                    <td class="three_left_td">14</td>
-                                    <td class="three_right_td">Biology / Comp Sc. / Isl Std</td>
-                                </tr>
-                                <tr class="three_dark_course">
-                                    <td class="three_left_td">15</td>
-                                    <td class="three_right_td">Chemistry / Gen Science</td>
-                                </tr>
-                                <tr class="three_light_course">
-                                    <td class="three_left_td">16</td>
-                                    <td class="three_right_td">Physics / Home Economics</td>
-                                </tr>
-                            </table>
+                        </table>
+                        <table class="second-table">
+                            <tr class="three_so_dark_course">
+                                <td class="three_left_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Sr. No.</td>
+                                <td class="three_right_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Title of Book Term-II</td>
+                            </tr>
+                            <tr class="three_light_course">
+                                <td class="three_left_td">10</td>
+                                <td class="three_right_td">Mathematics 9</td>
+                            </tr>
+                            <tr class="three_dark_course">
+                                <td class="three_left_td">11</td>
+                                <td class="three_right_td">Urdu 8</td>
+                            </tr>
+                            <tr class="three_light_course">
+                                <td class="three_left_td">12</td>
+                                <td class="three_right_td">Quick Way To Learn Computer VIII</td>
+                            </tr>
+                            <tr class="three_dark_course">
+                                <td class="three_left_td">13</td>
+                                <td class="three_right_td">Islamiat Compulsory</td>
+                            </tr>
+                            <tr class="three_light_course">
+                                <td class="three_left_td">14</td>
+                                <td class="three_right_td">Biology / Comp Sc. / Isl Std</td>
+                            </tr>
+                            <tr class="three_dark_course">
+                                <td class="three_left_td">15</td>
+                                <td class="three_right_td">Chemistry / Gen Science</td>
+                            </tr>
+                            <tr class="three_light_course">
+                                <td class="three_left_td">16</td>
+                                <td class="three_right_td">Physics / Home Economics</td>
+                            </tr>
+
                         </table>
                     </div>
                 </div>

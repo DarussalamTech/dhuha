@@ -25,21 +25,21 @@ class SiteController extends Controller {
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
      */
-    public function actionIndex() {
+    public function actionActivity() {
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
         $this->layout = "frontend";
 
 
-        $this->render("index");
+        $this->render("activity");
     }
 
     /**
      * dhuha action
      */
-    public function actionDhuha() {
+    public function actionIndex() {
         $this->layout = "frontend";
-        $this->render("dhuha");
+        $this->render("index");
     }
 
     /**
