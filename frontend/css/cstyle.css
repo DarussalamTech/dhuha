@@ -79,3 +79,9 @@ span.staric {
 section div table td{
     z-index: 10020 !important;
 }
+.contact_us input[type="text"] {
+      font-family: Myraid Pro;
+}
+.contact_us textArea {
+      font-family: Myraid Pro;
+}
