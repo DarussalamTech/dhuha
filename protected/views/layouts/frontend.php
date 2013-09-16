@@ -119,9 +119,9 @@
                                             <script>
                                                 var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
                                                 if (!oldieCheck) {
-                                                    document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+                                                    document.write('<script src="<?php echo Yii::app()->baseUrl; ?>/frontend/js/jquery/2.2/jquery.min.js"><\/script>');
                                                 } else {
-                                                    document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+                                                    document.write('<script src="<?php echo Yii::app()->baseUrl; ?>/frontend/js/jquery/1.10/jquery.min.js"><\/script>');
                                                 }
                                             </script>
                                             <script>
