@@ -8,6 +8,14 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
             'computer' => 'Computer',
             'library' => 'Library',
             'artlab' => 'Art',
+        ),
+        'colors' => array(
+            "header" => "#626C60",
+            "english_subject" => "#626C60",
+            "science_lab" => "#626C60",
+            "computer" => "#626C60",
+            "library" => "#626C60",
+            "artlab" => "#073829",
         )
         ));
 $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
@@ -17,7 +25,6 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
 
 $this->PcmWidget['lightbox'] = array('name' => 'DTLightBox',
     'attributes' => array(
-        
         ));
 ?>
 

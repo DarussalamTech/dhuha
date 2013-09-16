@@ -47,7 +47,7 @@ var dhuha = {
         jQuery('html, body').animate({
             scrollTop: $("#" + section_id).offset().top,
         }, 1000, function() {
-
+             dhuha.makeColorChangeOfMenus(section_id);
         });
 
     },
@@ -103,6 +103,7 @@ var dhuha = {
                
                 if (jQuery(this).offset().top > cutoff && jQuery(this).offset().top < cutoffRange) {
                     dhuha.makeActiveLink(jQuery(this).attr("id"));
+                    dhuha.makeColorChangeOfMenus(jQuery(this).attr("id"));
 
                 }
             });
@@ -111,11 +112,23 @@ var dhuha = {
              */
             if (jQuery("#header").offset().top == cutoff) {
                 dhuha.makeActiveLink("header");
-
-
+                dhuha.makeColorChangeOfMenus("header");
             }
         })
 
+    },
+    /**
+     * 
+     * @returns {undefined}
+     */
+    makeColorChangeOfMenus :function(section){
+        if(typeof(left_menu_colors[section])!="undefined"){
+            jQuery(".header_content ul li a").attr("style","color:"+left_menu_colors[section]+" !important;");
+        }
+        else {
+            jQuery(".header_content ul li a").removeAttr("style");
+        }
+        
     }
 }
 

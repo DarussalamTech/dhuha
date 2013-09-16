@@ -11,7 +11,19 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
             'class_six' => 'Class VI',
             'class_seven' => 'Class VII',
             'class_eight' => 'Class VIII',
-        )
+        ),
+        'colors' => array(
+            "header" => "#FFF",
+            'class_one' => '#FFF',
+            'class_two' => '#FFF',
+            'class_three' => '#FFF',
+            'class_four' => '#FFF',
+            'class_five' => '#FFF',
+            'class_six' => '#FFF',
+            'class_seven' => '#FFF',
+            'class_eight' => '#FFF',
+        ),
+        'link_color' => '#FFF'
         ));
 
 $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
@@ -504,34 +516,34 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
                             <td class="two_left_td">4</td>
                             <td class="two_right_td">Count Down 7th</td>
                         </tr>
-                         </table>
-                        <table class="second-table">
-                            <tr class="two_so_dark_course">
-                                <td class="two_left_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Sr. No.</td>
-                                <td class="two_right_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Title of Book Term-II</td>
-                            </tr>
-                            <tr class="two_light_course">
-                                <td class="two_left_td">5</td>
-                                <td class="two_right_td">Urdu 7th Punjab text book board Lahore</td>
-                            </tr>
-                            <tr class="two_dark_course">
-                                <td class="two_left_td">6</td>
-                                <td class="two_right_td">Qwaid-e-Insha 6th</td>
-                            </tr>
-                            <tr class="two_light_course">
-                                <td class="two_left_td">7</td>
-                                <td class="two_right_td">Nard ban urdu (Urdu work book-4)</td>
-                            </tr>
-                            <tr class="two_dark_course">
-                                <td class="two_left_td">8</td>
-                                <td class="two_right_td">Quick Way To Learn Computer VII</td>
-                            </tr>
-                            <tr class="two_light_course">
-                                <td class="two_left_td">9</td>
-                                <td class="two_right_td">Studies in Islam Darusalam</td>
-                            </tr>
-                        </table>
-                   
+                    </table>
+                    <table class="second-table">
+                        <tr class="two_so_dark_course">
+                            <td class="two_left_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Sr. No.</td>
+                            <td class="two_right_td" style="font-size:25px; font-family:Myraid Pro BoldSemiCnd;">Title of Book Term-II</td>
+                        </tr>
+                        <tr class="two_light_course">
+                            <td class="two_left_td">5</td>
+                            <td class="two_right_td">Urdu 7th Punjab text book board Lahore</td>
+                        </tr>
+                        <tr class="two_dark_course">
+                            <td class="two_left_td">6</td>
+                            <td class="two_right_td">Qwaid-e-Insha 6th</td>
+                        </tr>
+                        <tr class="two_light_course">
+                            <td class="two_left_td">7</td>
+                            <td class="two_right_td">Nard ban urdu (Urdu work book-4)</td>
+                        </tr>
+                        <tr class="two_dark_course">
+                            <td class="two_left_td">8</td>
+                            <td class="two_right_td">Quick Way To Learn Computer VII</td>
+                        </tr>
+                        <tr class="two_light_course">
+                            <td class="two_left_td">9</td>
+                            <td class="two_right_td">Studies in Islam Darusalam</td>
+                        </tr>
+                    </table>
+
                 </div>
             </div>
         </div>

@@ -1,10 +1,15 @@
 <?php
 $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
     'attributes' => array(
-            'links'=>array(
-                'header'=>'Dhuha',
-                'mission'=>'Vision &amp; Mission',
-                'goals'=>'Goals',
+        'links' => array(
+            'header' => 'Dhuha',
+            'mission' => 'Vision &amp; Mission',
+            'goals' => 'Goals',
+        ),
+          'colors' => array(
+            "header" => "#626C60",
+            "mission" => "#FFFFFF",
+            "goals" => "#04181B",
             )
         ));
 

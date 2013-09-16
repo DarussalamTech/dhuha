@@ -15,6 +15,11 @@ Yii::import('zii.widgets.CPortlet');
 class DTLeftMenu extends CPortlet {
 
     public $links = array();
+    
+    public $colors = array();
+    
+    public $link_color;
+
     /**
      * Init 
      */
@@ -26,6 +31,11 @@ class DTLeftMenu extends CPortlet {
      * Render Contents
      */
     protected function renderContent() {
+        $colors = CJSON::encode($this->colors);
+        Yii::app()->clientScript->registerScript('client_scripts', '
+            var left_menu_colors = '.$colors.';;
+        
+        ', CClientScript::POS_HEAD);
         $this->render('dtLeftMenu');
     }
 

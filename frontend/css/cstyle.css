@@ -75,3 +75,7 @@ span.staric {
 .second-table {
     margin-top:40px;
 }
+
+section div table td{
+    z-index: 10020 !important;
+}
