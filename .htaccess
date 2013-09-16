@@ -3,4 +3,4 @@
 # deny from all
 #</file>
 
-Redirect 301 /http://54.244.125.63/dhuha/protected/ http://www.google.com
+Redirect 301 /54.244.125.63/dhuha/protected/ http://www.google.com
