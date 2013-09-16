@@ -79,8 +79,8 @@
                                                                     <?php
                                                                     $dt_menu_array = array(
                                                                         "index" => "Dhuha",
-                                                                        "activity" => "Activities",
-                                                                        "courses" => "Courses",
+                                                                        "activity" => "Facilities",
+                                                                        "courses" => "Curriculum",
                                                                         "teachingsystem" => "Teaching System",
                                                                         "feestructure" => "Fee Structure",
                                                                         "none3" => "Gallery",
@@ -90,9 +90,9 @@
                                                                     foreach ($dt_menu_array as $key => $text) {
                                                                         echo "<li>";
                                                                         if ($this->action->id == $key) {
-                                                                            echo CHtml::link($text, $this->createUrl("site/" . $key), array("class" => "active"));
+                                                                            echo CHtml::link($text, $this->createUrl("/site/" . $key), array("class" => "active"));
                                                                         } else {
-                                                                            echo CHtml::link($text, $this->createUrl("site/" . $key));
+                                                                            echo CHtml::link($text, $this->createUrl("/site/" . $key));
                                                                         }
 
                                                                         echo "</li>";
