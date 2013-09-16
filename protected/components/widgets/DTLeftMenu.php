@@ -36,6 +36,7 @@ class DTLeftMenu extends CPortlet {
         
         ', CClientScript::POS_HEAD);
         }
+        
         $this->render('dtLeftMenu');
     }
 

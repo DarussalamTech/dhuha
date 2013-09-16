@@ -10,9 +10,10 @@
                     <li>
                         <?php
                         $textimg = CHtml::image(Yii::app()->baseUrl . "/frontend/images/fixed_red_color_02.jpg") . $data;
+                        $extra_class= !empty($this->link_color)?"white_link":"";
                         echo CHtml::link($textimg, "#" . $key, array(
-                                    "class" => "sidebar_link",
-                                    "style"=>!empty($this->link_color)?"color:".$this->link_color." !important" :"",
+                                    "class" => "sidebar_link ".$extra_class,
+                                    //"style"=>!empty($this->link_color)?"color:".$this->link_color." !important" :"",
                             ));
                         ?>
                     </li>
