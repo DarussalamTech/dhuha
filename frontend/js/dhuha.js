@@ -8,7 +8,7 @@ var dhuha = {
      * will take to top of the page
      * @returns 
      */
-    hash_sign : "",
+    hash_sign: "",
     sideBarLinkHover: function() {
         jQuery(".header_content p a").hover(function() {
             //jQuery(".header_content p a").removeAttr("class");
@@ -41,20 +41,23 @@ var dhuha = {
 
         jQuery(".header_content ul li a").removeAttr("class");
 
-        jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
+
+
 
 
         jQuery('html, body').animate({
             scrollTop: $("#" + section_id).offset().top,
         }, 1000, function() {
-             dhuha.makeColorChangeOfMenus(section_id);
+            dhuha.makeColorChangeOfMenus(section_id);
+            jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
+            //console.log(section_id + "hi");
         });
 
     },
     registerSidebarLink: function() {
 
         jQuery(".sidebar_link").click(function(event) {
-           
+
             var full_url = jQuery(this).attr("href");
             var section_id = full_url.replace("#", "");
 
@@ -62,14 +65,23 @@ var dhuha = {
             jQuery(".header_content ul li a").removeAttr("class");
 
             jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
-            
+
             dhuha.hash_sign = section_id;
+
+            //console.log(jQuery(".header_content ul li a[href=#" + section_id + "]"));
+
+            //$(document).unbind("scroll",dhuha.makeCurrentActiveLab);
 
             jQuery('html, body').animate({
                 scrollTop: $("#" + section_id).offset().top,
             }, 1000, function() {
-
+                dhuha.makeColorChangeOfMenus(section_id);
+                 jQuery(".header_content ul li a").removeAttr("class");
+                jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
+                //$(document).bind("scroll",dhuha.makeCurrentActiveLab);
             });
+
+
         })
     },
     makeActiveLink: function(section_id) {
@@ -94,13 +106,16 @@ var dhuha = {
      * @returns {undefined}
      */
     makeCurrentActiveLab: function() {
-        jQuery(document).scroll(function() {
+
+
+        jQuery(window).scroll(function(e) {
             var cutoff = jQuery(window).scrollTop();
             var cutoffRange = cutoff + 200;
 
+            e.preventDefault();
 
             jQuery('section').each(function() {
-               
+
                 if (jQuery(this).offset().top > cutoff && jQuery(this).offset().top < cutoffRange) {
                     dhuha.makeActiveLink(jQuery(this).attr("id"));
                     dhuha.makeColorChangeOfMenus(jQuery(this).attr("id"));
@@ -114,6 +129,7 @@ var dhuha = {
                 dhuha.makeActiveLink("header");
                 dhuha.makeColorChangeOfMenus("header");
             }
+
         })
 
     },
@@ -121,14 +137,14 @@ var dhuha = {
      * 
      * @returns {undefined}
      */
-    makeColorChangeOfMenus :function(section){
-        if(typeof(left_menu_colors[section])!="undefined"){
-            jQuery(".header_content ul li a").attr("style","color:"+left_menu_colors[section]+" !important;");
+    makeColorChangeOfMenus: function(section) {
+        if (typeof(left_menu_colors[section]) != "undefined") {
+            jQuery(".header_content ul li a").attr("style", "color:" + left_menu_colors[section] + " !important;");
         }
         else {
             jQuery(".header_content ul li a").removeAttr("style");
         }
-        
+
     }
 }
 
