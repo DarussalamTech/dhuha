@@ -138,7 +138,7 @@ var dhuha = {
      * @returns {undefined}
      */
     makeColorChangeOfMenus: function(section) {
-        if (typeof(left_menu_colors[section]) != "undefined" && !$(".header_row .toggle").is(":visible")) {
+        if (typeof(left_menu_colors)!="undefined" && typeof(left_menu_colors[section]) != "undefined" && !$(".header_row .toggle").is(":visible")) {
             jQuery(".header_content ul li a").attr("style", "color:" + left_menu_colors[section] + " !important;");
         }
         else {
