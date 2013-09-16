@@ -12,6 +12,12 @@ $url_manager = array(
     'rules' => array(
         '' => '/site/index',
         /** Product detail * */
+        'facilities' => '/site/activity',
+        'curriculum' => '/site/courses',
+        'teachingsystem' => '/site/teachingsystem',
+        'feestructure' => '/site/feestructure',
+        'contactus' => '/site/contactus',
+        'contactus' => '/site/contactus',
         '<controller:\w+>/<id:\d+>' => '<controller>/view',
         '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
         '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
