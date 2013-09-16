@@ -1,1 +1,6 @@
-deny from all
+#<file protected>
+# order deny
+# deny from all
+#</file>
+
+Redirect 301 /protected http://www.google.com
