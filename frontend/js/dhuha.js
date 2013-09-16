@@ -73,9 +73,9 @@ var dhuha = {
         })
     },
     makeActiveLink: function(section_id) {
-        jQuery(".header_content p a").removeAttr("class");
+        jQuery(".header_content ul li a").removeAttr("class");
 
-        jQuery(".header_content p a[href=#" + section_id + "]").attr("class", "hover");
+        jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
 
 
     },
@@ -100,6 +100,7 @@ var dhuha = {
 
 
             jQuery('section').each(function() {
+               
                 if (jQuery(this).offset().top > cutoff && jQuery(this).offset().top < cutoffRange) {
                     dhuha.makeActiveLink(jQuery(this).attr("id"));
 
