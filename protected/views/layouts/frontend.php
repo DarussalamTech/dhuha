@@ -61,20 +61,14 @@
                                                                         <a href="<?php echo Yii::app()->homeUrl ?>"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/logo_03.jpg" /></a>
                                                                     </div>
                                                                 </h1>
-                                                                <div class="nav_right">
-                                                                    <div class="social_media">
-                                                                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/facebook_img_03.jpg" /></a>
-                                                                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/camera_img_03.jpg" /></a>
-                                                                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tweet_img_03.jpg" /></a>
-                                                                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/subscription_img_03.jpg" /></a>
-                                                                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/sc_img_03.jpg" /></a>
-                                                                    </div>
+<!--                                                                <div class="nav_right">
+                                                            
                                                                     <div class="language">
-<!--                                                                        <span><a href="#">English</a></span><br />
-                                                                        <span><a href="#">Arabic</a></span>-->
+                                                                        <span><a href="#">English</a></span><br />
+                                                                        <span><a href="#">Arabic</a></span>
                                                                     </div>
-                                                                </div>
-                                                                <ul id="top_navigation" class="seven columns">
+                                                                </div>-->
+                                                                <ul id="top_navigation" class="nine columns">
 
                                                                     <?php
                                                                     $dt_menu_array = array(
@@ -83,6 +77,7 @@
                                                                         "courses" => "Curriculum",
                                                                         "teachingsystem" => "Teaching System",
                                                                         "feestructure" => "Fee Structure",
+                                                                        "administration" => "Administration",
                                                                         "none3" => "Gallery",
                                                                         "contactus" => "Contact Us",
                                                                     );

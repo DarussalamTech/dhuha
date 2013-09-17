@@ -1,26 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
 
 
-header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../images/curriculum_bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-
-.curriculum { margin-top:20%; margin-right:auto; margin-left:auto; width:90%; }
-
-.curriculum h1 { color:#494948; font-family:Myraid Pro BoldCond; font-size:52px; }
-
-.curriculum p { color:#FFF; font-family:Myraid Pro Cond; font-size:25px; }
-
-.curriculum ul li { list-style:disc; color:#FFF; font-family:Myraid Pro Cond; font-size:21px; margin-left:30px; }
-
-.main_course { width:100%; float:left; padding: 0; margin: 0; }
-
-.main_course article { width:100%; margin: 0; padding: 0; height:100%; height:903px; min-height:100%; background:url(../images/lkg_bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+header { float:left; width:100%; margin: 0; padding: 0; height:1100px; min-height:903px; background:url(../images/lkg_bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 .courses { margin-top:20%; margin-right:auto; margin-left:auto; width:80%; }
 
 .courses h1 { font-family:Myraid Pro BoldCond; color:#2c3b33; font-size:52px; }
 
-.left_td { padding-left:5%; width:20%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
+.admin_left_td { padding-left:5%; width:35%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
 
-.right_td { width:70%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
+.admin_right_td { width:30%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
+
+.admin_middle_td { width:35%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
 
 .courses table { background:none; border: none; }
 
@@ -40,7 +32,13 @@ header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../
 
 .class_one_part { margin-top:10%; margin-right:auto; margin-left:auto; width:80%; }
 
-.class_one_part h1 { font-family:Myraid Pro BoldCond; color:#48211b; font-size:52px; }
+.class_one_part h1 { padding: 0; margin: 0; font-family:Myraid Pro BoldCond; color:#48211b; font-size:52px; }
+
+.class_one_part h2 { padding: 0; margin: 0; color:#48211b; font-size:22px; font-family:Myraid Pro BoldCond; }
+
+.class_one_part h2 span { color:#fcb1b1; }
+
+.class_one_part p { font-size:15px; color:#fcb1b1; font-family:Myraid Pro; }
 
 .class_one_part table { background:none; border: none; }
 
@@ -54,9 +52,9 @@ header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../
 
 .one_light_course { background:#653027; }
 
-.one_left_td { width:20%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; padding-left:5%; }
+.admin_one_left_td { width:48%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; padding-left:5%; }
 
-.one_right_td { width:70%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
+.admin_one_right_td { width:50%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
 
 .class_two { width:100%; float:left; padding: 0; margin: 0; }
 
@@ -64,7 +62,11 @@ header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../
 
 .class_two_part { margin-top:10%; margin-right:auto; margin-left:auto; width:80%; }
 
-.class_two_part h1 { font-family:Myraid Pro BoldCond; color:#132227; font-size:52px; }
+.class_two_part h1 { padding: 0; margin: 0; font-family:Myraid Pro BoldCond; color:#132227; font-size:52px; }
+
+.class_two_part h2 { padding: 0 0 20px 0; margin: 0; font-size:22px; font-family:Myraid Pro BoldCond; color:#132227; }
+
+.class_two_part h2 span { color:#baeeff; }
 
 .class_two_part table { border: none; }
 
@@ -78,9 +80,9 @@ header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../
 
 .two_light_course { background:#214b57; }
 
-.two_left_td { width:20%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; color:#FFF; padding-left:5%; }
+.admin_two_left_td { width:48%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; color:#FFF; padding-left:5%; }
 
-.two_right_td { width:70%; color:#FFF; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
+.admin_two_right_td { width:50%; color:#FFF; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; }
 
 .class_three { width:100%; float:left; padding: 0; margin: 0; }
 
@@ -88,7 +90,11 @@ header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../
 
 .class_three_part { margin-top:10%; margin-right:auto; margin-left:auto; width:80%; }
 
-.class_three_part h1 { font-family:Myraid Pro BoldCond; color:#4c5131; font-size:52px; }
+.class_three_part h1 { padding: 0; margin: 0; font-family:Myraid Pro BoldCond; color:#4c5131; font-size:52px; }
+
+.class_three_part h2 { padding: 0 0 20px 0; margin: 0; font-size:22px; font-family:Myraid Pro BoldCond; color:#4c5131; }
+
+.class_three_part h2 span { color:#f6ffc3; }
 
 .class_three_part table { border: none; }
 
@@ -102,9 +108,9 @@ header { width:100%; margin: 0; padding: 0; min-height:700px; background:url(../
 
 .three_light_course { background:#676c42; }
 
-.three_left_td { width:20%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; color:#FFF; padding-left:5%; }
+.admin_three_left_td { width:48%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; color:#FFF; padding-left:5%; }
 
-.three_right_td { width:70%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; color:#FFF; }
+.admin_three_right_td { width:50%; font-family:Myraid Pro SemiBoldCnd; color:#FFF; font-size:19px; color:#FFF; }
 
 .class_four { width:100%; float:left; padding: 0; margin: 0; }
 

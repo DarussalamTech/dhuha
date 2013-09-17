@@ -42,9 +42,6 @@ var dhuha = {
         jQuery(".header_content ul li a").removeAttr("class");
 
 
-
-
-
         jQuery('html, body').animate({
             scrollTop: $("#" + section_id).offset().top,
         }, 1000, function() {
@@ -80,16 +77,11 @@ var dhuha = {
                 jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
                 //$(document).bind("scroll",dhuha.makeCurrentActiveLab);
             });
-
-
         })
     },
     makeActiveLink: function(section_id) {
         jQuery(".header_content ul li a").removeAttr("class");
-
         jQuery(".header_content ul li a[href=#" + section_id + "]").attr("class", "hover");
-
-
     },
     /**
      * 

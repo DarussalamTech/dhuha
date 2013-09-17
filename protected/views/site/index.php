@@ -3,7 +3,7 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
     'attributes' => array(
         'links' => array(
             'header' => 'Dhuha',
-            'mission' => 'Vision &amp; Mission',
+            'mission' => 'Philosophy',
             'goals' => 'Goals',
         ),
           'colors' => array(
@@ -24,10 +24,24 @@ $this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
         <div class="row">
             <div class="twelve columns">
                 <div class="mission_part">
+                    <h1>PHILOSOPHY</h1>
+                    <h2>
+                        DHUHA International School is accessible 
+                        to all students, and not for a privileged few. 
+                        It is our philosophy that the success of an educational 
+                        institution should be measured by the value it adds to each 
+                        individual.
+                    </h2>
                     <h1>VISION</h1>
-                    <h2>Known as a beacon of knowledge and Islamic value.</h2>
+                    <h2>DHUHA aspires to be known as a beacon of 
+                        knowledge and a source of Islamic values.
+                    </h2>
                     <h1>MISSION</h1>
-                    <h2>The advancement of society through powering research, and encouraging academic and scientific excellence.</h2>
+                    <h2>
+                        DHUHA aims to provide quality education 
+                        of an international standard 
+                        for the advancement of the society.
+                    </h2>
                 </div>
             </div>
         </div>

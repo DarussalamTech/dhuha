@@ -3,4 +3,11 @@
 # deny from all
 #</file>
 
-Redirect 301 /54.244.125.63/dhuha/protected/ http://www.google.com
+RedirectMatch 301 /protected/ /contact-us.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>

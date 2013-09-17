@@ -12,7 +12,7 @@
         <p>Everything possible is done to ensure success, and no student is allowed to fail easily.</p>
         <h2>Planning and preparing:</h2>
         <p>Thorough preparation precedes teaching. Each course is exhaustively researched and structured and is described in terms of hundreds of clearly stated objectives, eliminating guesswork. A plan for each subject at each stage is prepared. Each plan is complete which includes all of the points to be taught and all the skills to be developed. By using the efficient teaching methods and by following the pacing charts, teachers implement the staged plans, hereby helping students to fulfill their potential.</p>
-        <h2>Teaching methods and education system :</h2>
+        <h2>Teaching methods :</h2>
         <p>The whole class is taught together. Class time is utilized by building a solid foundation of knowledge through effective discussion based on critical thinking and logical reasoning. The varied teaching methods used and pace set simulate students.</p>
         <h2>Testing &amp; Monitoring:</h2>
         <p>Continues evaluation of student learning is an integral part of the instructional process at DHUHA. Testing to evaluate student learning, and to permit timely positive intervention, is frequent and regular. Testing students in this way has a number of <span>important advantages:</span></p>

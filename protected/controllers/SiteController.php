@@ -65,6 +65,14 @@ class SiteController extends Controller {
         $this->layout = "frontend";
         $this->render("feestructure");
     }
+    /**
+     * Administration
+     */
+    public function actionAdministration() {
+        $this->layout = "frontend";
+        
+        $this->render("administration");
+    }
 
     /**
      * Fee action
