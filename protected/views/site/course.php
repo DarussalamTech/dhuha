@@ -16,6 +16,7 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
         'colors' => array(
             "header" => "#FFF",
             'class_one' => '#FFF',
+            'main_course_1' => '#FFF',
             'class_two' => '#FFF',
             'class_three' => '#FFF',
             'class_four' => '#FFF',
