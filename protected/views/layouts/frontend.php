@@ -61,13 +61,13 @@
                                                                         <a href="<?php echo Yii::app()->homeUrl ?>"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/logo_03.jpg" /></a>
                                                                     </div>
                                                                 </h1>
-<!--                                                                <div class="nav_right">
-                                                            
-                                                                    <div class="language">
-                                                                        <span><a href="#">English</a></span><br />
-                                                                        <span><a href="#">Arabic</a></span>
-                                                                    </div>
-                                                                </div>-->
+                                                                <!--                                                                <div class="nav_right">
+                                                                                                                            
+                                                                                                                                    <div class="language">
+                                                                                                                                        <span><a href="#">English</a></span><br />
+                                                                                                                                        <span><a href="#">Arabic</a></span>
+                                                                                                                                    </div>
+                                                                                                                                </div>-->
                                                                 <ul id="top_navigation" class="nine columns">
 
                                                                     <?php
@@ -193,5 +193,9 @@
                                             <script src="https://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
                                             <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
                                             <![endif]-->
+
+                                           <!--[if IE]>
+                                            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/ie_only.css" />
+                                           <![endif]-->
                                         </body>
                                         </html>
