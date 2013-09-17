@@ -36,7 +36,7 @@ header { float:left; width:100%; margin: 0; padding: 0; max-height:2300px; min-h
   -o-background-size: cover;
   background-size: cover; min-height:903px; }
 
-#mission article { margin-top:10%; width:80%; margin-left:auto; margin-right:auto; }
+#mission article { margin-top:7%; width:80%; margin-left:auto; margin-right:auto; }
 
 .mission_part { text-align:center; }
 
