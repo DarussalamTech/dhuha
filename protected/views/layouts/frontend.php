@@ -78,6 +78,7 @@
                                                                         "teachingsystem" => "Teaching System",
                                                                         "feestructure" => "Fee Structure",
                                                                         "administration" => "Administration",
+                                                                        "rules" => "Rules & Regulations",
                                                                         "none3" => "Gallery",
                                                                         "contactus" => "Contact Us",
                                                                     );

@@ -17,6 +17,7 @@ $url_manager = array(
         'teachingsystem' => '/site/teachingsystem',
         'feestructure' => '/site/feestructure',
         'administration' => '/site/administration',
+        'rules' => '/site/rules',
         'contactus' => '/site/contactus',
         'contactus' => '/site/contactus',
         '<controller:\w+>/<id:\d+>' => '<controller>/view',
