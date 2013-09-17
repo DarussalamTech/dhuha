@@ -56,7 +56,7 @@
                                                         <div class="row">
                                                             <div class="navbar row" id="nav2">
                                                                 <a class="toggle" gumby-trigger="#nav2 > ul" href="#"><i class="icon-menu"></i></a>
-                                                                <h1 class="three columns logo">
+                                                                <h1 class="two columns logo">
                                                                     <div class="logo">
                                                                         <a href="<?php echo Yii::app()->homeUrl ?>"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/logo_03.jpg" /></a>
                                                                     </div>
@@ -68,7 +68,7 @@
                                                                                                                                         <span><a href="#">Arabic</a></span>
                                                                                                                                     </div>
                                                                                                                                 </div>-->
-                                                                <ul id="top_navigation" class="nine columns">
+                                                                <ul id="top_navigation" class="ten columns">
 
                                                                     <?php
                                                                     $dt_menu_array = array(
