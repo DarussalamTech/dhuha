@@ -1,5 +1,5 @@
 <?php
-$this->PcmWidget['dt_header'] = array('name' => 'DTHeaderPart',
+$this->PcmWidget['dt_header2'] = array('name' => 'DTHeaderPart',
     'attributes' => array(
         'viewName' => "/common/_gallery",
         ));

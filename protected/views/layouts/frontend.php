@@ -104,6 +104,11 @@
                                                             ?>
 
                                                         </div>
+                                                        <?php
+                                                        if (isset($this->PcmWidget['dt_header2'])) {
+                                                            $this->widget($this->PcmWidget['dt_header2']['name'], $this->PcmWidget['dt_header2']['attributes']);
+                                                        }
+                                                        ?>
                                                     </div>
                                                 </header>
                                                 <?php echo $content ?>
@@ -213,10 +218,10 @@
                                                     jQuery(document).ready(function() {
                                                         jQuery('.filter_list').jcarousel({visible: 5});
 
-                                                        jQuery(".filter_list li a[data-type='checked_all']").bind('click',function() {
+                                                        jQuery(".filter_list li a[data-type='checked_all']").bind('click', function() {
                                                             dhuha.gallleryShow(this);
                                                         })
-                                                        jQuery(".filter_list li a[data-type='others']").bind('click',function() {
+                                                        jQuery(".filter_list li a[data-type='others']").bind('click', function() {
                                                             dhuha.gallleryShow(this);
                                                         })
                                                     })
