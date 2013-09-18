@@ -81,6 +81,14 @@ class SiteController extends Controller {
         
         $this->render("rules");
     }
+    /**
+     * Gallery
+     */
+    public function actionGallery() {
+        $this->layout = "frontend";
+        
+        $this->render("gallery");
+    }
 
     /**
      * Fee action
