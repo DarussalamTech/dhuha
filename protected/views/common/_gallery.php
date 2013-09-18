@@ -27,74 +27,71 @@
             <div class="art_images">
                 <ul>
                     <li class="three columns" data-value="qirat">
-                        <a href="javascript:void(0)">
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png" rel="lightbox[_default]">
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
                         </a>
                     </li>
                     <li class="three columns" data-value="qirat">
-                        <a href="javascript:void(0)">
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png" rel="lightbox[_default]">
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_2_03.png"); ?>
                         </a>
                     </li>
-                    <li class="three columns" data-value="qirat">
-                        <a href="javascript:void(0)">
+                    <li class="three columns" data-value="qirat" >
+                        <a  rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png">
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_3_03.png"); ?>
                         </a>
                     </li>
-                    <li class="three columns" data-value="qirat">
-                        <a href="javascript:void(0)">
+                    <li class="three columns" data-value="qirat" >
+                        <a rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png">
+                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="three columns" data-value="sports" >
+                        <a  rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png">
+
+                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
+                        </a>
+                    </li>
+                    <li class="three columns" data-value="sports" >
+                        <a rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png">
+
+                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_2_03.png"); ?>
+                        </a>
+                    </li>
+                    <li class="three columns" data-value="sports" >
+                        <a rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png">
+
+                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_3_03.png"); ?>
+                        </a>
+                    </li>
+                    <li class="three columns" data-value="sports" >
+                        <a rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png">
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
                         </a>
                     </li>
                 </ul>
                 <ul>
                     <li class="three columns" data-value="sports">
-                        <a href="javascript:void(0)">
-
-                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
-                        </a>
-                    </li>
-                    <li class="three columns" data-value="sports">
-                        <a href="javascript:void(0)">
-
-                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_2_03.png"); ?>
-                        </a>
-                    </li>
-                    <li class="three columns" data-value="sports">
-                        <a href="javascript:void(0)">
-
-                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_3_03.png"); ?>
-                        </a>
-                    </li>
-                    <li class="three columns" data-value="sports">
-                        <a href="javascript:void(0)">
-
-                            <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="three columns" data-value="sports">
-                        <a href="javascript:void(0)">
-
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png" rel="lightbox[_default]">
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
                         </a>
                     </li>
                     <li class="three columns" data-value="ed">
-                        <a href="javascript:void(0)">
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png" rel="lightbox[_default]">
 
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_2_03.png"); ?>
                         </a>
                     </li>
                     <li class="three columns" data-value="ed">
-                        <a href="javascript:void(0)">
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png" rel="lightbox[_default]">
 
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_img_3_03.png"); ?>
                         </a>
                     </li>
                     <li class="three columns" data-value="ed">
-                        <a href="javascript:void(0)">
-
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png" rel="lightbox[_default]">
                             <?php echo CHtml::image(Yii::app()->baseUrl . "/frontend/images/art_image_1_03.png"); ?>
                         </a>
                     </li>
