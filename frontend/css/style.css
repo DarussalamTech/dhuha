@@ -166,7 +166,7 @@ header { width:100%; margin: 0; padding: 0; height:100%; height:903px; min-heigh
 
 #artlab article { padding: 0 0 50px 0; margin-top:15%; margin-bottom:15%; }
 
-.artlab_part { padding: 0; margin-top:50px; }
+.artlab_part { padding: 0; margin-top:50px;width:45% }
 
 #artlab article h1 { padding: 0; margin: 0; font-family:Myraid Pro BlackCond; color:#073829; font-size:75px; }
 
