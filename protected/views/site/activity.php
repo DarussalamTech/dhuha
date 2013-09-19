@@ -101,28 +101,14 @@ $this->PcmWidget['lightbox'] = array('name' => 'DTLightBox',
             <div class="twelve columns">
                 <div class="artlab_part">
                     <h1>ART LAB</h1>
-                    <div class="art_images">
-                        <div class="four columns">
-                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
-                        </div>
-                        <div class="four columns">
-                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
-                        </div>
-                        <div class="four columns">
-                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
-                        </div>
-                    </div>
-                    <div class="art_images">
-                        <div class="four columns">
-                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_image_1_03.png"></a>
-                        </div>
-                        <div class="four columns">
-                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_2_03.png"></a>
-                        </div>
-                        <div class="four columns">
-                            <a data-lightbox="example-set" rel="lightbox[_default]" href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/art_img_3_03.png"></a>
-                        </div>
-                    </div>
+                    <p>
+                       All our young kids of kindgarten visit the activity room 
+                       through out the week as we prefer to give our students such as 
+                       we prefer to give our students such an environment which will make 
+                       learning more fun and curiosity centered. Here our toddlers are 
+                       involved in various activities based on social life or religion and
+                       they perform variety of tasks based on art & craft.
+                    </p>
                 </div>
             </div>
         </div>
