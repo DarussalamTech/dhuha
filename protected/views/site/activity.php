@@ -7,7 +7,7 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
             'science_lab' => 'Science',
             'computer' => 'Computer',
             'library' => 'Library',
-            'artlab' => 'Art',
+            'artlab' => 'Activity Room',
         ),
         'colors' => array(
             "header" => "#626C60",
@@ -100,7 +100,7 @@ $this->PcmWidget['lightbox'] = array('name' => 'DTLightBox',
         <div class="row">
             <div class="twelve columns">
                 <div class="artlab_part">
-                    <h1>ART LAB</h1>
+                    <h1>ACTIVITY ROOM</h1>
                     <p>
                        All our young kids of kindgarten visit the activity room 
                        through out the week as we prefer to give our students such as 
