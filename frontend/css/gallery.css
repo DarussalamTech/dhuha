@@ -99,3 +99,6 @@ header { padding: 0; margin: 0; background:url(../images/gallery_bg.jpg) no-repe
     color: red !important;
     cursor: inherit;
 }
+.artlab_part {
+    width: auto;
+}
