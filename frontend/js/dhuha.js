@@ -9,6 +9,7 @@ var dhuha = {
      * @returns 
      */
     hash_sign: "",
+    
     sideBarLinkHover: function() {
         jQuery(".header_content p a").hover(function() {
             //jQuery(".header_content p a").removeAttr("class");
@@ -138,20 +139,36 @@ var dhuha = {
         }
 
     },
-    gallleryShow: function(obj) {
+    gallleryShow: function(obj,gallery_obj) {
         jQuery(".filter_list li a").removeAttr("class");
         jQuery(obj).attr("class", "checked");
 
-
-        attrbute_s = jQuery(obj).attr("data-value");
         
+                //event.preventDefault();
+                attrbute_s = jQuery(obj).attr("data-value");
+        console.log(gallery_obj);   
         if (attrbute_s == "all") {
-            $('.art_images ul li').show("scale", {}, 1500);
 
+            $('.art_images').hide();
+            $('.art_images').html(gallery_obj.html());
+            $('.art_images').slideDown('slow');
         }
         else {
-            $('.art_images ul li').hide();
-            $('.art_images ul').find("[data-value='" + attrbute_s + "']").show("scale", {}, 1500);
+            $('.art_images').hide();
+            //console.log(gallery_obj.find("[data-value='" + attrbute_s + "']").html());
+           // console.log(gallery_obj.find("[data-value='" + attrbute_s + "']"));
+            html_1 = '';
+            
+            
+            gallery_obj.find("[data-value='" + attrbute_s + "']").each(function(){
+                 html_1+= '<li data-value="'+attrbute_s+'" class="three columns">';
+                 html_1+= $(this).html();
+                 html_1+= '</li>';
+            })
+            console.log(html_1);
+            $('.art_images').html("<ul>"+html_1+"</ul>");
+
+            $('.art_images').slideDown('slow');
         }
     }
 }

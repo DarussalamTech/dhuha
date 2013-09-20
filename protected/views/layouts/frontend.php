@@ -217,12 +217,13 @@
                                                 <script>
                                                     jQuery(document).ready(function() {
                                                         jQuery('.filter_list').jcarousel({visible: 5});
-
+                                                        
+                                                        gallery_obj = jQuery(".art_images").clone();
                                                         jQuery(".filter_list li a[data-type='checked_all']").bind('click', function() {
-                                                            dhuha.gallleryShow(this);
+                                                            dhuha.gallleryShow(this,gallery_obj);
                                                         })
                                                         jQuery(".filter_list li a[data-type='others']").bind('click', function() {
-                                                            dhuha.gallleryShow(this);
+                                                            dhuha.gallleryShow(this,gallery_obj);
                                                         })
                                                     })
                                                 </script>
