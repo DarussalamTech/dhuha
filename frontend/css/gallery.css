@@ -6,7 +6,7 @@ header { padding: 0; margin: 0; background:url(../images/gallery_bg.jpg) no-repe
 
 .filter h1 { font-family:Myraid Pro SemiBoldCnd; font-size:28px; float:left; color:#FFF; border-right:1px solid #FFF; margin-top:2px; padding-right:7px; }
 
-.art_images { padding: 0; margin-top:100px; float:left; }
+.art_images { padding: 0; margin-top:150px; float:left; }
 
 .filter ul { padding: 0; margin-left: 0; }
 
@@ -87,8 +87,25 @@ header { padding: 0; margin: 0; background:url(../images/gallery_bg.jpg) no-repe
     position: absolute;
     top: 18px;
     left: -15px;
-    width: 32px;
+    width: 17px;
     height: 32px;
     cursor: pointer;
     background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
 }
+.jcarousel-item {
+    z-index: 100;
+}
+.jcarousel-item a.checked {
+    color: red !important;
+    cursor: inherit;
+}
+
+
+.art_img { float:left; width:240px; }
+
+
+.art_img img { float:left; width:240px !important; }
+
+.art_images ul { width:100%; }
+
+.art_lab_part { width:960px; margin: 0 auto; padding: 0; }
