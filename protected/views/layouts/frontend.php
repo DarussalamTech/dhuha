@@ -214,6 +214,7 @@
                                                 <script src="<?php echo Yii::app()->baseUrl; ?>/frontend/js/jq_browser.js"></script>
                                                 <script src="<?php echo Yii::app()->baseUrl; ?>/frontend/js/jquery.jcarousel.min.js"></script>
 
+
                                                 <script>
                                                     jQuery(document).ready(function() {
                                                         jQuery('.filter_list').jcarousel({visible: 5});

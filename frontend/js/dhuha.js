@@ -9,7 +9,6 @@ var dhuha = {
      * @returns 
      */
     hash_sign: "",
-    
     sideBarLinkHover: function() {
         jQuery(".header_content p a").hover(function() {
             //jQuery(".header_content p a").removeAttr("class");
@@ -139,14 +138,14 @@ var dhuha = {
         }
 
     },
-    gallleryShow: function(obj,gallery_obj) {
+    gallleryShow: function(obj, gallery_obj) {
         jQuery(".filter_list li a").removeAttr("class");
         jQuery(obj).attr("class", "checked");
 
-        
-                //event.preventDefault();
-                attrbute_s = jQuery(obj).attr("data-value");
-        console.log(gallery_obj);   
+
+        //event.preventDefault();
+        attrbute_s = jQuery(obj).attr("data-value");
+        //console.log(gallery_obj);
         if (attrbute_s == "all") {
 
             $('.art_images').hide();
@@ -156,20 +155,87 @@ var dhuha = {
         else {
             $('.art_images').hide();
             //console.log(gallery_obj.find("[data-value='" + attrbute_s + "']").html());
-           // console.log(gallery_obj.find("[data-value='" + attrbute_s + "']"));
-            html_1 = '';
-            
-            
-            gallery_obj.find("[data-value='" + attrbute_s + "']").each(function(){
-                 html_1+= '<li data-value="'+attrbute_s+'" class="three columns">';
-                 html_1+= $(this).html();
-                 html_1+= '</li>';
-            })
-            console.log(html_1);
-            $('.art_images').html("<ul>"+html_1+"</ul>");
+            //console.log(gallery_obj.find("[data-value='" + attrbute_s + "']"));
+            html_arr = new Array();
 
-            $('.art_images').slideDown('slow');
+            //dhuha.chunk(a, 4, true)
+            gallery_obj.find("[data-value='" + attrbute_s + "']").each(function() {
+                html_arr.push($(this).html());
+
+            })
+            html_1 = "";
+            if (html_arr.length != 0) {
+                new_htm_arr = dhuha.chunk(html_arr, 4, true);
+                for (o in new_htm_arr) {
+                    html_1 += "<ul>";
+                    for (ob in new_htm_arr[o]) {
+                        
+                        html_1 += '<li data-value="' + attrbute_s + '" class="three columns">';
+                        html_1 += new_htm_arr[o][ob];
+                        html_1 += '</li>';
+                    }
+                    html_1 += "</ul>";
+                }
+            }
+
+            $('.art_images').html(html_1);
+
+           $('.art_images').slideDown('slow');
         }
+    },
+    chunk: function(input, size, preserve_keys) {
+        // http://kevin.vanzonneveld.net
+        // +   original by: Carlos R. L. Rodrigues (http://www.jsfromhell.com)
+        // +   improved by: Brett Zamir (http://brett-zamir.me)
+        // %        note 1: Important note: Per the ECMAScript specification, objects may not always iterate in a predictable order
+        // *     example 1: array_chunk(['Kevin', 'van', 'Zonneveld'], 2);
+        // *     returns 1: [['Kevin', 'van'], ['Zonneveld']]
+        // *     example 2: array_chunk(['Kevin', 'van', 'Zonneveld'], 2, true);
+        // *     returns 2: [{0:'Kevin', 1:'van'}, {2: 'Zonneveld'}]
+        // *     example 3: array_chunk({1:'Kevin', 2:'van', 3:'Zonneveld'}, 2);
+        // *     returns 3: [['Kevin', 'van'], ['Zonneveld']]
+        // *     example 4: array_chunk({1:'Kevin', 2:'van', 3:'Zonneveld'}, 2, true);
+        // *     returns 4: [{1: 'Kevin', 2: 'van'}, {3: 'Zonneveld'}]
+
+        var x, p = '', i = 0, c = -1, l = input.length || 0, n = [];
+
+        if (size < 1) {
+            return null;
+        }
+
+        if (Object.prototype.toString.call(input) === '[object Array]') {
+            if (preserve_keys) {
+                while (i < l) {
+                    (x = i % size) ? n[c][i] = input[i] : n[++c] = {}, n[c][i] = input[i];
+                    i++;
+                }
+            }
+            else {
+                while (i < l) {
+                    (x = i % size) ? n[c][x] = input[i] : n[++c] = [input[i]];
+                    i++;
+                }
+            }
+        }
+        else {
+            if (preserve_keys) {
+                for (p in input) {
+                    if (input.hasOwnProperty(p)) {
+                        (x = i % size) ? n[c][p] = input[p] : n[++c] = {}, n[c][p] = input[p];
+                        i++;
+                    }
+                }
+            }
+            else {
+                for (p in input) {
+                    if (input.hasOwnProperty(p)) {
+                        (x = i % size) ? n[c][x] = input[p] : n[++c] = [input[p]];
+                        i++;
+                    }
+                }
+            }
+        }
+        return n;
     }
 }
 
