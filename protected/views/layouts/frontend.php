@@ -79,7 +79,7 @@
                                                                         "feestructure" => "Fee Structure",
                                                                         "administration" => "Administration",
                                                                         "rules" => "Rules & Regulations",
-                                                                        "none3" => "Gallery",
+                                                                        "gallery" => "Gallery",
                                                                         "contactus" => "Contact Us",
                                                                     );
 
@@ -104,6 +104,11 @@
                                                             ?>
 
                                                         </div>
+                                                        <?php
+                                                        if (isset($this->PcmWidget['dt_header2'])) {
+                                                            $this->widget($this->PcmWidget['dt_header2']['name'], $this->PcmWidget['dt_header2']['attributes']);
+                                                        }
+                                                        ?>
                                                     </div>
                                                 </header>
                                                 <?php echo $content ?>
@@ -178,6 +183,10 @@
                                                 <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/frontend/lightbox/css/lightbox.css" media="screen"/>
                                                 <?php
                                             }
+
+                                            /**
+                                             *  pcm is action is equal to gallery
+                                             */
                                             ?>
 
                                             <!-- Change UA-XXXXX-X to be your site's ID -->
@@ -195,8 +204,32 @@
                                             <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
                                             <![endif]-->
 
-                                           <!--[if IE]>
-                                            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/ie_only.css" />
-                                           <![endif]-->
+                                            <!--[if IE]>
+                                             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/frontend/css/ie_only.css" />
+                                            <![endif]-->
+                                            <?php
+                                            if ($this->action->id == "gallery") :
+                                                ?>
+                                                <script src="<?php echo Yii::app()->baseUrl; ?>/packages/jui/js/jquery-ui.min.js"></script>
+                                                <script src="<?php echo Yii::app()->baseUrl; ?>/frontend/js/jq_browser.js"></script>
+                                                <script src="<?php echo Yii::app()->baseUrl; ?>/frontend/js/jquery.jcarousel.min.js"></script>
+
+
+                                                <script>
+                                                    jQuery(document).ready(function() {
+                                                        jQuery('.filter_list').jcarousel({visible: 5});
+                                                        
+                                                        gallery_obj = jQuery(".art_images").clone();
+                                                        jQuery(".filter_list li a[data-type='checked_all']").bind('click', function() {
+                                                            dhuha.gallleryShow(this,gallery_obj);
+                                                        })
+                                                        jQuery(".filter_list li a[data-type='others']").bind('click', function() {
+                                                            dhuha.gallleryShow(this,gallery_obj);
+                                                        })
+                                                    })
+                                                </script>
+                                                <?php
+                                            endif;
+                                            ?>
                                         </body>
                                         </html>
