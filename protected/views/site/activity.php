@@ -7,7 +7,7 @@ $this->PcmWidget['side_menu'] = array('name' => 'DTLeftMenu',
             'science_lab' => 'Science',
             'computer' => 'Computer',
             'library' => 'Library',
-            'artlab' => 'Art',
+            'artlab' => 'Activity Room',
         ),
         'colors' => array(
             "header" => "#626C60",
@@ -96,16 +96,18 @@ $this->PcmWidget['lightbox'] = array('name' => 'DTLightBox',
 </section>
 
 <section id="artlab">
-    <article>
-        <div class="row">
-            <div class="twelve columns">
-                <div class="artlab_part">
-               		<h1>ACTIVITY ROOM</h1>
-                 	<p>All our young kids of kindergarten visit the activity room throughout the week as we prefer to give our students such an environment which will make learning more fun and curiosity centered. Here our toddlers are involved in various activities based on social life or religion and they perform variety of tasks based on art &amp; craft.</p>
-           		</div>
-            </div>
-        </div>
-    </article>
+  	<article>
+       	<div class="row">
+           	<div class="twelve columns">
+              	<div class="five columns">
+                   	<div class="artlab_part">
+                     	<h1>ACTIVITY ROOM</h1>
+                    	<p>All our young kids of kindergarten visit the activity room throughout the week as we prefer to give our students such an environment which will make learning more fun and curiosity centered. Here our toddlers are involved in various activities based on social life or religion and they perform variety of tasks based on art &amp; craft.</p>
+                   	</div>
+              	</div>
+           	</div>
+     	</div>
+   	</article>
 </section>
 <?php
 /**
